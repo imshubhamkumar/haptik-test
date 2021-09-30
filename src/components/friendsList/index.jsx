@@ -60,7 +60,9 @@ const FriendsList = () => {
         list = [...list.filter((item) => item.id !== id)];
         setFriendList(list)
         setNonFilter(list);
-        setPage(0);
+        if (Math.ceil(list.length/4) < page + 1) {
+            setPage(page - 1);   
+        }
     }
     const handleSearch = (str) => {
         let list = [...friendLit];
