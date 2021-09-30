@@ -11,3 +11,87 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.list-container {
+  width: 60%;
+  margin: auto;
+}
+
+.navbar-light.bg-light {
+  background-color: #dbdee3 !important;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+.add-name-container input {
+  border: none;
+  padding: 15px;
+}
+
+.form-control:focus, .page-link:focus, .page-item:focus {
+  border-color: none;
+  box-shadow: none;
+}
+
+.list {
+  width: 100%;
+}
+
+.list ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+
+div.name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+span.label {
+  font-size: small;
+  color: #808081;
+}
+
+
+.sort-btn {
+  cursor: pointer;
+}
+
+.icon i {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 2px 12px;
+  border: 1px solid;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal.show {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .list-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .list-container {
+    width: 100%;
+  }
+  .row {
+    --bs-gutter-x: none;
+  }
+}
